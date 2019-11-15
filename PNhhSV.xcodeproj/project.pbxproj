@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F203BA23236D7DF6007A8AF0 /* AlertName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203BA22236D7DF6007A8AF0 /* AlertName.swift */; };
+		F2106134237EB159009B2675 /* sd.aiff in Resources */ = {isa = PBXBuildFile; fileRef = F2106133237EB159009B2675 /* sd.aiff */; };
 		F21FDB412371CEC400F470C6 /* SendId.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21FDB402371CEC400F470C6 /* SendId.swift */; };
 		F29907C5236EE8D800C15C4E /* LabelAndButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29907C4236EE8D800C15C4E /* LabelAndButton.swift */; };
 		F29907C7236EFC0600C15C4E /* TestConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29907C6236EFC0600C15C4E /* TestConnection.swift */; };
@@ -15,7 +16,6 @@
 		F2B114D323709167004B84EB /* SendTokenDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B114D223709167004B84EB /* SendTokenDevice.swift */; };
 		F2B114D52370B4FF004B84EB /* SendName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B114D42370B4FF004B84EB /* SendName.swift */; };
 		F2B41A9123714B1900F85C80 /* SendNameArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B41A9023714B1900F85C80 /* SendNameArray.swift */; };
-		F2B5232A23701BC4008A5739 /* silence.aiff in Resources */ = {isa = PBXBuildFile; fileRef = F2B5232923701BC4008A5739 /* silence.aiff */; };
 		F2B5232F237040D7008A5739 /* runeDD.aiff in Resources */ = {isa = PBXBuildFile; fileRef = F2B5232E237040D7008A5739 /* runeDD.aiff */; };
 		F2C28E14236C6E1F00F1CCD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C28E13236C6E1F00F1CCD2 /* AppDelegate.swift */; };
 		F2C28E1B236C6E1F00F1CCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C28E19236C6E1F00F1CCD2 /* Main.storyboard */; };
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		F203BA22236D7DF6007A8AF0 /* AlertName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertName.swift; sourceTree = "<group>"; };
+		F2106133237EB159009B2675 /* sd.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = sd.aiff; sourceTree = "<group>"; };
 		F21FDB402371CEC400F470C6 /* SendId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendId.swift; sourceTree = "<group>"; };
 		F29907C4236EE8D800C15C4E /* LabelAndButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndButton.swift; sourceTree = "<group>"; };
 		F29907C6236EFC0600C15C4E /* TestConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConnection.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		F2B114D223709167004B84EB /* SendTokenDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTokenDevice.swift; sourceTree = "<group>"; };
 		F2B114D42370B4FF004B84EB /* SendName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendName.swift; sourceTree = "<group>"; };
 		F2B41A9023714B1900F85C80 /* SendNameArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNameArray.swift; sourceTree = "<group>"; };
-		F2B5232923701BC4008A5739 /* silence.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = silence.aiff; sourceTree = "<group>"; };
 		F2B5232B237020EE008A5739 /* PNhhSV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PNhhSV.entitlements; sourceTree = "<group>"; };
 		F2B5232E237040D7008A5739 /* runeDD.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = runeDD.aiff; sourceTree = "<group>"; };
 		F2C28E10236C6E1F00F1CCD2 /* PNhhSV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNhhSV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +130,7 @@
 				F2B5232B237020EE008A5739 /* PNhhSV.entitlements */,
 				F2C28E13236C6E1F00F1CCD2 /* AppDelegate.swift */,
 				F2B5232E237040D7008A5739 /* runeDD.aiff */,
-				F2B5232923701BC4008A5739 /* silence.aiff */,
+				F2106133237EB159009B2675 /* sd.aiff */,
 				F203BA21236D772D007A8AF0 /* Model */,
 				F203BA1F236D7704007A8AF0 /* Managers */,
 				F203BA1E236D76CC007A8AF0 /* ViewModel */,
@@ -203,9 +203,9 @@
 			files = (
 				F2C28E20236C6E2200F1CCD2 /* LaunchScreen.storyboard in Resources */,
 				F2C28E1D236C6E2200F1CCD2 /* Assets.xcassets in Resources */,
+				F2106134237EB159009B2675 /* sd.aiff in Resources */,
 				F2C28E1B236C6E1F00F1CCD2 /* Main.storyboard in Resources */,
 				F2B5232F237040D7008A5739 /* runeDD.aiff in Resources */,
-				F2B5232A23701BC4008A5739 /* silence.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -133,7 +133,7 @@ var timerReq = setInterval(function() {
 			console.log('arrIdS: ' + arrIdServer);
 			console.log('-');
 			putArrIdM();
-			notif(tokenDevice,'-','silence.aiff');
+			notif(tokenDevice,'-','sd.aiff');
 		};
 		var y = 1;
 		var z = 0;
