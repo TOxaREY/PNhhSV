@@ -11,7 +11,7 @@ var timerReq = setInterval(function() {
 	var arrNumberForRemove = [];
 	var arrFull = [];
 	var arrFinish = [];
-	var tokenDevice = '';
+	var tokenDeviceArray = [];
 	var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 	httpNA = "http://133.133.133.133:8000/hh/5dc07f91191ea01605298d4d";
 	httpID = "http://133.133.133.133:8000/hh/5dc197b3c3f9d606c5609124";
@@ -48,7 +48,7 @@ var timerReq = setInterval(function() {
 	};
 	if (xhrT.status == 200) {
 		json = JSON.parse(xhrT.responseText);
-		tokenDevice = json.tokenDevice;
+		tokenDeviceArray = json.tokenDevice;
 	};
 	function putArrIdM() {
 		var data = "id=" + arrIdServer;
@@ -126,14 +126,14 @@ var timerReq = setInterval(function() {
 			console.log('arrIdS: ' + arrIdServer);
 			console.log('+');
 			putArrIdM();
-			notif(tokenDevice,'+','runeDD.aiff');
+			notif('+','runeDD.aiff');
 		};
 		if (arrIdServer.length < arrId.length) {
 			console.log('arrIdM: ' + arrId);
 			console.log('arrIdS: ' + arrIdServer);
 			console.log('-');
 			putArrIdM();
-			notif(tokenDevice,'-','sd.aiff');
+			notif('-','sd.aiff');
 		};
 		var y = 1;
 		var z = 0;
@@ -155,14 +155,14 @@ var timerReq = setInterval(function() {
 					console.log('arrIdS: ' + arrIdServer);
 					console.log('!=');
 					putArrIdM();
-					notif(tokenDevice,'+','runeDD.aiff');
+					notif('+','runeDD.aiff');
 				};
 			};
 		};
 	};
 }, 1800000);
 // Function notification
-function notif(deviceToken,badge,sound) {
+function notif(badge,sound) {
 // Set up apn with the APNs Auth Key
 var apnProvider = new apn.Provider({  
 	token: {
@@ -192,10 +192,10 @@ if (badge == '-') {
 // Play ping.aiff sound when the notification is received
 notification.sound = sound;
 // Actually send the notification
-apnProvider.send(notification, deviceToken).then(function(result) {  
+apnProvider.send(notification, tokenDeviceArray).then(function(result) {  
 // Check the result for any failed devices
 console.log(result);
+});
 apnProvider.shutdown();
-})
 };
 
