@@ -126,14 +126,14 @@ var timerReq = setInterval(function() {
 			console.log('arrIdS: ' + arrIdServer);
 			console.log('+');
 			putArrIdM();
-			notif('+','runeDD.aiff');
+			notif(deviceTokenArray,'+','runeDD.aiff');
 		};
 		if (arrIdServer.length < arrId.length) {
 			console.log('arrIdM: ' + arrId);
 			console.log('arrIdS: ' + arrIdServer);
 			console.log('-');
 			putArrIdM();
-			notif('-','sd.aiff');
+			notif(deviceTokenArray,'-','sd.aiff');
 		};
 		var y = 1;
 		var z = 0;
@@ -155,14 +155,14 @@ var timerReq = setInterval(function() {
 					console.log('arrIdS: ' + arrIdServer);
 					console.log('!=');
 					putArrIdM();
-					notif('+','runeDD.aiff');
+					notif(deviceTokenArray,'+','runeDD.aiff');
 				};
 			};
 		};
 	};
-}, 1800000);
+}, 600000);
 // Function notification
-function notif(badge,sound) {
+function notif(deviceTokenArray,badge,sound) {
 // Set up apn with the APNs Auth Key
 var apnProvider = new apn.Provider({  
 	token: {
