@@ -60,12 +60,16 @@ var timerReq = setInterval(function() {
 		xhrIDP.send(data);
 	};
 	function createArray(string) {
-		var string2 = string.replace(/["]+/g, '');
-		var string3 = string2.replace('[', '');
-		var string4 = string3.replace(']', '');
-		var string5 = string4.replace(/[' ']+/g, '');
-		var arr = string5.split(',');
-		return arr;
+		if (string.length != 0) {
+			var string2 = string.replace(/["]+/g, '');
+			var string3 = string2.replace('[', '');
+			var string4 = string3.replace(']', '');
+			var string5 = string4.replace(/[' ']+/g, '');
+			var arr = string5.split(',');
+			return arr;
+		} else {
+			return [];
+		};
 	};
 	arrName = createArray(nameArray);
 	arrId = createArray(id);

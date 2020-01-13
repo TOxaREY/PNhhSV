@@ -52,10 +52,12 @@ class CutArray {
             } else {
                 arrayFinish = arrFull
             }
-            for i in 0...arrayFinish.count - 1 {
-                viewModel.id.append(arrayFinish[i].id)
+            if arrayFinish.count != 0 {
+                for i in 0...arrayFinish.count - 1 {
+                    viewModel.id.append(arrayFinish[i].id)
+                }
+                return arrayFinish
             }
-            return arrayFinish
         }
         return arrayFull
     }
