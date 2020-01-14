@@ -15,10 +15,12 @@ class SendId {
         guard let url = URL(string: ("http://133.133.133.133:8000/hh/5dc197b3c3f9d606c5609124")) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        let bodyData = "id=\(viewModel.id)"
-        request.httpBody = bodyData.data(using: .utf8)
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        if viewModel.id.count != 0 {
+            let bodyData = "id=\(viewModel.id)"
+            request.httpBody = bodyData.data(using: .utf8)
+            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            }
+            task.resume()
         }
-        task.resume()
     }
 }
